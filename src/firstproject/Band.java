@@ -36,6 +36,13 @@ public class Band {
 		
 	}
 	
+	public int countMembers()
+	{
+		return 2+singers.length+guitarists.length;
+	}
+	
+	
+	
 	
 	
 	

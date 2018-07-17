@@ -19,6 +19,12 @@ public class testBand {
 		b2.setBandDetails("maroon6",singers1,guitarists1, "Jo", "han solo");
 		b2.printBandDetails();
 		
+		System.out.println(b1.countMembers());
+		System.out.println(b2.countMembers());
+		
+	
+		
+		
 
 	}
 
