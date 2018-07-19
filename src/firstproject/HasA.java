@@ -1,3 +1,5 @@
+//@Author-Sanjana      Date- 19-07-2018
+
 package firstproject;
 
 class Emp5
@@ -7,7 +9,8 @@ class Emp5
 	int eid;
 	String dept;
 	Address add;
-	 Emp5(double salary, String name, int eid, String dept, Address add) {
+	 
+	Emp5(double salary, String name, int eid, String dept, Address add) {
 		super();
 		this.salary = salary;
 		this.name = name;
@@ -15,7 +18,8 @@ class Emp5
 		this.dept = dept;
 		this.add = add;
 	}
-	 public void printEmployeeDetails()
+	
+	public void printEmployeeDetails()
 	 {
 		 System.out.println(this.name);
 		 System.out.println(this.eid);
@@ -33,6 +37,7 @@ class Emp5
 		 int flatno;
 		 String city;
 		 int pincode;
+		
 		 Address(String flatName, String main, String cross, int flatno, String city, int pincode) {
 			super();
 			this.flatName = flatName;
@@ -42,6 +47,7 @@ class Emp5
 			this.city = city;
 			this.pincode = pincode;
 		}
+		 
 		 public void printAddress()
 		 {
 			 System.out.println(this.flatName);
