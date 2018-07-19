@@ -7,8 +7,10 @@ public class Score {
 		int m1=95;
 		int m2=45;
 		int m3=88;
-	    double percentage;
-	    percentage= (m1+m2+m3)*2.5;
+		int tot=(m1+m2+m3);
+	    double percentage=(tot*100)/250;
+	    
+	    System.out.println(tot);
 	    System.out.println(percentage);
 
 	}
