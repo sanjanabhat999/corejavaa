@@ -9,8 +9,8 @@ public class TestCar {
 		Car car3= new Car();
 		Car car4= new Car();
 		Car car5= new Car();
-		car1.setCarDetails("Volkswagen", 60, 1000000, true);
-		car2.setCarDetails("mercedes", 80, 1000005, true);
+		car1.setCarDetails("Volkswagen", 9, 1000000, true);
+		car2.setCarDetails("mercedes", 9, 1000005, true);
 		car3.setCarDetails("maruti", 60, 10000, false);
 		car4.setCarDetails("A", 60, 50000, true);
 		car5.setCarDetails("B", 100, 2000000, true);
@@ -31,9 +31,11 @@ public class TestCar {
 			}
 			
 		}
+		System.out.println();
 		
 		System.out.println(carname);
 
 	}
-
+	
+	
 }
