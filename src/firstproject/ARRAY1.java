@@ -21,7 +21,7 @@ public class ARRAY1 {
 		{
 			if(arr[i]==26)
 			{
-				flag=1;
+				flag= 1;
 			break;
 		
 		    }
