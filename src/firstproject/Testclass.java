@@ -14,6 +14,11 @@ public class Testclass {
 		t.name="Abhay";
 		t.salary=10000;
 		
+		Labtainer lb=new Labtainer();
+		lb.salary=20000;
+		
+		
+		
 		
 
 	}
