@@ -1,0 +1,40 @@
+create table emp1 (empid integer, empname varchar2(20), managerid integer);
+
+insert into emp1 VALUES(1,'John',2); 
+insert into emp1 VALUES(5,'Stephen',2); 
+
+select * from emp1;
+select p.empname,m.empname from emp1 p, emp1 m where p.managerid=m.empid;
+select * from emp1;
+insert into emp1 VALUES(5,'Stephen',2);
+insert into emp1 VALUES(4,'Rahim',2);
+insert into emp1 VALUES(3,'Raj',0);
+insert into emp1 VALUES(2,'Peter',3);
+insert into emp1 VALUES(1,'John',2);
+create table emp1 (empid integer, empname varchar2(20), managerid integer);
+select * from employee;
+select * from authors;
+alter table authors add CONSTRAINT ch CHECK(authorid between 101 and 110);
+select * from tab;
+alter table customer add constraint u unique(custname);
+select * from customer;
+insert into customer values (102, 'monica');
+select * from books;
+insert into books VALUES(003, 103,'Chronicles');
+insert into books VALUES(002, 102,'The Kite Runner');
+insert into authors VALUES(103, 'Jeffreyarcher');
+insert into authors VALUES(102, 'khalidhusseini');
+create table books (bookid integer primary key,authorid  integer references authors(authorid),bookname varchar2(20));
+create table authors (authorid integer primary key, authorname varchar2(20));
+alter table customer add constraint pk PRIMARY KEY(custid);
+create table customer(custid int ,custname varchar2(20));
+create table product(prodid int PRIMARY KEY,prodname varchar2(20));
+select s.sname from sailor s where exists(select * from reserves r where r.bid=103 and s.sid=r.sid);
+select s.sname from sailor s,reserves r where s.sid=r.sid and r.bid=103;
+select s.sname from sailor s where s.sid in(select r.sid from reserves r where r.bid=103insert into reserves VALUES(1, 103);
+insert into sailor VALUES(2, 101);
+
+select p.name,o.department from personal p, officisl o;
+insert into personal VALUES(1, 'Peter','a1+ve', 999);
+insert into personal VALUES(2, 'Raju','a1', 222);
+create table personal(empid integer, name char(20), bloodgroup char(5), emergencyno integer);
