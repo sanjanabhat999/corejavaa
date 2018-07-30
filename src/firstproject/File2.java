@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 
 public class File2 {
 
-	public static void main(String[] args) throws IOException {
+	public  static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		FileWriter fw= new FileWriter("D:\\java\\myinput.txt");
 		BufferedWriter bw= new BufferedWriter(fw);
