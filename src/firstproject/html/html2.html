@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <title>
+	Login Form
+	</title>
+	<script>
+	function validateuser()
+	{
+	alert ("function invokes");
+	var x= document.getElementById("t1").value;
+	var y= document.getElementById("t2").value;
+	if(x=='' || y=='')
+	{
+	alert("Enter both fields");
+	return false;
+	}
+	else
+	{
+	alert("Successfully Logged In");
+	return true;
+	}
+	}
+	</script>
+
+	
+   </head>
+   <center>
+  <body>
+  <h1 style="color:blue">Login Form</h1>
+  <hr>
+  <form action="http://localhost:8080/MyServlet/Validate" onsubmit="return validateuser()">
+
+Username: <input type="text" name="t1" id="t1" placeholder="username"/> <br><br>
+Password: <input type="password" name="p1" id="t2" placeholder="password"/><br><br>
+Age: <input type="number" min="1" max="99"/><br><br>
+DOB: <input type="Date" name="d1"><br><br>
+<input type="submit">
+</center>
+
+</form>
+  </body>
+</html>
